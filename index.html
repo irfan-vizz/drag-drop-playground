@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Playground</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- ************************************************ 
+         Properties Toolbar Section
+         ************************************************-->
+        <div class="toolbar">
+            <h2>Elements</h2>
+            <div class="draggable-element" data-type="text" draggable="true">
+                <span class="icon">T</span>
+                <span>Text</span>
+            </div>
+            <div class="draggable-element" data-type="img" draggable="true">
+                <span class="icon">📷</span>
+                <span>Image</span>
+            </div>
+            <div class="draggable-element" data-type="shape" draggable="true">
+                <span class="icon">◇</span>
+                <span>Shape</span>
+            </div>
+        </div>
+    <!-- ************************************************ 
+         Playground Section
+         ************************************************-->
+        <div class="playground" id="playground">
+            <h2>Playground</h2>
+            <p>Drag elements here</p>
+        </div>
+        <!-- ************************************************ 
+         Properties Edit Section
+         ************************************************-->
+        <div class="properties-panel">
+            <h2>Properties</h2>
+            <div id="properties-form">
+                <p>Select an element to edit its properties</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
